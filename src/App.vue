@@ -4,7 +4,7 @@
       <VAppBarTitle>Vuetify Project</VAppBarTitle>
     </VAppBar>
     <v-main>
-      <Welcome/>
+      <Test/>
     </v-main>
   </v-app>
 </template>
