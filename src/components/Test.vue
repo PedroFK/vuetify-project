@@ -146,7 +146,6 @@
           <v-card-actions>
             <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="orange">enviar <br> para cliente</v-btn>
             <v-btn
-              size="small"
               prepend-icon="mdi-calendar-month"
               variant="tonal"
               color="orange"
@@ -174,7 +173,6 @@
           <v-card-actions>
             <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="orange">enviar <br> para cliente</v-btn>
             <v-btn
-              size="small"
               prepend-icon="mdi-calendar-month"
               variant="tonal"
               color="orange"
@@ -202,7 +200,6 @@
           <v-card-actions>
             <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="orange">enviar <br> para cliente</v-btn>
             <v-btn
-              size="small"
               prepend-icon="mdi-calendar-month"
               variant="tonal"
               color="orange"
@@ -230,7 +227,6 @@
           <v-card-actions>
             <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="orange">enviar <br> para cliente</v-btn>
             <v-btn
-              size="small"
               prepend-icon="mdi-calendar-month"
               variant="tonal"
               color="orange"
@@ -258,7 +254,6 @@
           <v-card-actions>
             <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="orange">enviar <br> para cliente</v-btn>
             <v-btn
-              size="small"
               prepend-icon="mdi-calendar-month"
               variant="tonal"
               color="orange"
@@ -280,13 +275,12 @@
           ></v-img>
 
           <v-card-text>
-            <div>A ilha mais cobiçada do Brasil é, certamente, um dos destinos mais bonitos em nosso país, bastante procurado para férias e viagens em lua-de-mel.</div>
+            <div>A ilha mais cobiçada do Brasil é, certamente, um dos destinos mais bonitos em nosso país.</div>
           </v-card-text>
 
           <v-card-actions>
             <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="orange">enviar <br> para cliente</v-btn>
             <v-btn
-              size="small"
               prepend-icon="mdi-calendar-month"
               variant="tonal"
               color="orange"
@@ -308,13 +302,12 @@
           ></v-img>
 
           <v-card-text>
-            <div>Ainda desconhecida por muitas pessoas, São Miguel do Gostoso é uma cidade bem pequenininha do Rio Grande do Norte, na beira do mar, ideal para quem busca quietude.</div>
+            <div>Ainda desconhecida por muitas pessoas, São Miguel do Gostoso é uma cidade bem pequenininha do Rio Grande do Norte.</div>
           </v-card-text>
 
           <v-card-actions>
             <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="orange">enviar <br> para cliente</v-btn>
             <v-btn
-              size="small"
               prepend-icon="mdi-calendar-month"
               variant="tonal"
               color="orange"
