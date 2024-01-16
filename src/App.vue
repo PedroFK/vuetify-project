@@ -1,12 +1,12 @@
 <template>
   <v-app theme="light">
     <v-navigation-drawer v-model="isDrawerOpen">
-      <v-list>
+      <v-list density="compact">
         <v-list-item title="Menu"></v-list-item>
           
-        <v-list-item href="#" prepend-icon="mdi-account">Home</v-list-item>
+        <v-list-item  href="#" prepend-icon="mdi-home">Home</v-list-item>
 
-        <v-list-item href="#" prepend-icon="mdi-account">Usuários</v-list-item>
+        <v-list-item href="#" prepend-icon="mdi-account">Clientes</v-list-item>
 
         <v-list-group value="Locations">
 
@@ -14,7 +14,8 @@
               <v-list-item
               v-bind="props"
               prepend-icon="mdi-web"
-              title="Lugares"
+              title="Catálogo"
+              subtitle="Destinos"
               >
               </v-list-item>
           </template>
@@ -34,7 +35,7 @@
         @click="isDrawerOpen = !isDrawerOpen"
       ></v-app-bar-nav-icon>
 
-      <VAppBarTitle>Vuetify Project</VAppBarTitle>
+      <VAppBarTitle>Agente de Viagem</VAppBarTitle>
 
       <template #append>
 
