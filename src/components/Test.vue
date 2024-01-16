@@ -1,30 +1,152 @@
 <template>
   <v-container>
+    <v-card flat class="border mb-4">
+      <v-card-title>Leads para Contato</v-card-title>
+
+      <v-dialog
+        transition="dialog-bottom-transition"
+        class="mx-auto"
+        max-width="500"
+        v-model="dialogOpen"
+      >
+        <template v-slot:default="{ isActive }">
+          <v-card>
+            <v-card-item class="bg-cyan-darken-1">
+              <v-card-title>
+                <span class="text-h5">nome do Contato</span>
+              </v-card-title>
+
+              <template v-slot:append>
+                <v-defaults-provider
+                  :defaults="{
+                    VBtn: {
+                      variant: 'text',
+                      density: 'compact',
+                    },
+                  }"
+                >
+                  <v-btn size="x-large" class="mb-1" icon @click="isActive.value = false">X</v-btn>
+                </v-defaults-provider>
+              </template>
+            </v-card-item>
+
+            <v-list>
+              <v-list-item
+                prepend-icon="mdi-phone"
+                title="(27) 99555-1234"
+              ></v-list-item>
+
+              <v-divider inset></v-divider>
+
+              <v-list-item
+                prepend-icon="mdi-email"
+                title="mcbeal@example.com"
+              ></v-list-item>
+
+              <v-divider inset></v-divider>
+
+              <v-list-item
+                prepend-icon="mdi-map-marker"
+                title="Viçosa, MG n801"
+              ></v-list-item>
+            </v-list>
+          </v-card>
+        </template>
+      </v-dialog>
+
+      <v-table density="compact">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Primeiro contato</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pedro</td>
+            <td>pedro@gmail.com</td>
+            <td>20/08/2023</td>
+            <td>
+              <v-btn
+                @click="dialogOpen = true"
+                color="blue"
+                style="border-radius: 5px"
+                density="compact"
+                icon="mdi-phone"
+                class="mr-2"
+              />
+              <v-btn
+                color="green"
+                style="border-radius: 5px"
+                density="compact"
+                icon="mdi-check-bold"
+                class="mr-2"
+              />
+              <v-btn
+                color="red"
+                style="border-radius: 5px"
+                density="compact"
+                icon="mdi-trash-can-outline"
+                class="mr-2"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Gabriela</td>
+            <td>gabi222@gmail.com</td>
+            <td>12/11/2023</td>
+            <td>
+              <v-btn
+                color="blue"
+                style="border-radius: 5px"
+                density="compact"
+                icon="mdi-phone"
+                class="mr-2"
+              />
+              <v-btn
+                color="green"
+                style="border-radius: 5px"
+                density="compact"
+                icon="mdi-check-bold"
+                class="mr-2"
+              />
+              <v-btn
+                color="red"
+                style="border-radius: 5px"
+                density="compact"
+                icon="mdi-trash-can-outline"
+                class="mr-2"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </v-table>
+    </v-card>
+
     <v-row>
-      <v-col cols="12" sm="6" md="4" lg="3">
-        <v-card class="mx-auto">
-          <v-card-title>A maior borboleta do mundo</v-card-title>
+      <v-col cols="12" sm="6" md="4" >
+        <v-title></v-title>
+        <v-card height="530" class="mx-auto" density="compact">
+          <v-card-title>Bonito, Mato Grosso do Sul</v-card-title>
 
           <v-img
             class="mx-auto align-center text-white"
             cover
             width="300"
             height="300"
-            src="https://images.pexels.com/photos/10917649/pexels-photo-10917649.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/06/lugares-para-viajar-brasil-820x430.jpg"
           ></v-img>
 
-          <v-card-subtitle class="pt-4">
-            Conheça a maior borboleta do mundo</v-card-subtitle
-          >
-
           <v-card-text>
-            <div>Conheça a maior borboleta do mundo</div>
-            <div>Whitsunday Island, Whitsunday Islands</div>
+            <div>Excelente para quem busca contato com a natureza, Bonito é o lugar perfeito para quem quer contato com a natureza e uma boa dose aventura!</div>
           </v-card-text>
 
           <v-card-actions>
-            <v-btn variant="outlined" color="orange">Visitar</v-btn>
+            <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="orange">enviar <br> para cliente</v-btn>
             <v-btn
+              size="small"
               prepend-icon="mdi-calendar-month"
               variant="tonal"
               color="orange"
@@ -33,30 +155,26 @@
           </v-card-actions>
         </v-card>
       </v-col>
-      <v-col cols="12" sm="6" md="4" lg="3">
-        <v-card class="mx-auto">
-          <v-card-title>A maior borboleta do mundo</v-card-title>
+      <v-col cols="12" sm="6" md="4" >
+        <v-card height="530" class="mx-auto" density="compact">
+          <v-card-title>Chapada dos Veadeiros, Goiás</v-card-title>
 
           <v-img
             class="mx-auto align-center text-white"
             cover
             width="300"
             height="300"
-            src="https://images.pexels.com/photos/10917649/pexels-photo-10917649.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/06/lugares-viajar-brasil--820x547.jpeg"
           ></v-img>
 
-          <v-card-subtitle class="pt-4">
-            Conheça a maior borboleta do mundo</v-card-subtitle
-          >
-
           <v-card-text>
-            <div>Conheça a maior borboleta do mundo</div>
-            <div>Whitsunday Island, Whitsunday Islands</div>
+            <div>Uma das cidades para se ter como base para visitar a Chapada dos Veadeiros, em Goiás, é a pequena Alto Paraíso.</div>
           </v-card-text>
 
           <v-card-actions>
-            <v-btn variant="outlined" color="orange">Visitar</v-btn>
+            <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="orange">enviar <br> para cliente</v-btn>
             <v-btn
+              size="small"
               prepend-icon="mdi-calendar-month"
               variant="tonal"
               color="orange"
@@ -65,30 +183,26 @@
           </v-card-actions>
         </v-card>
       </v-col>
-      <v-col cols="12" sm="6" md="4" lg="3">
-        <v-card class="mx-auto">
-          <v-card-title>A maior borboleta do mundo</v-card-title>
+      <v-col cols="12" sm="6" md="4" >
+        <v-card height="530" class="mx-auto" density="compact">
+          <v-card-title>Pantanal</v-card-title>
 
           <v-img
             class="mx-auto align-center text-white"
             cover
             width="300"
             height="300"
-            src="https://images.pexels.com/photos/10917649/pexels-photo-10917649.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="https://www.melhoresdestinos.com.br/wp-content/uploads/2022/09/pantanal-gustavo-figueiroa3-820x430.jpg"
           ></v-img>
 
-          <v-card-subtitle class="pt-4">
-            Conheça a maior borboleta do mundo</v-card-subtitle
-          >
-
           <v-card-text>
-            <div>Conheça a maior borboleta do mundo</div>
-            <div>Whitsunday Island, Whitsunday Islands</div>
+            <div>São poucas as opções de hotéis e pousadas com serviço completo e boa avaliação dos hóspedes para reservar pelo Booking. </div>
           </v-card-text>
 
           <v-card-actions>
-            <v-btn variant="outlined" color="orange">Visitar</v-btn>
+            <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="orange">enviar <br> para cliente</v-btn>
             <v-btn
+              size="small"
               prepend-icon="mdi-calendar-month"
               variant="tonal"
               color="orange"
@@ -97,30 +211,26 @@
           </v-card-actions>
         </v-card>
       </v-col>
-      <v-col cols="12" sm="6" md="4" lg="3">
-        <v-card class="mx-auto">
-          <v-card-title>A maior borboleta do mundo</v-card-title>
+      <v-col cols="12" sm="6" md="4" >
+        <v-card height="530" class="mx-auto" density="compact">
+          <v-card-title>Pirenópolis, Goiás</v-card-title>
 
           <v-img
             class="mx-auto align-center text-white"
             cover
             width="300"
             height="300"
-            src="https://images.pexels.com/photos/10917649/pexels-photo-10917649.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/05/viagem-pos-quarentena-pirenopolis-820x547.jpg"
           ></v-img>
 
-          <v-card-subtitle class="pt-4">
-            Conheça a maior borboleta do mundo</v-card-subtitle
-          >
-
           <v-card-text>
-            <div>Conheça a maior borboleta do mundo</div>
-            <div>Whitsunday Island, Whitsunday Islands</div>
+            <div>Apenas “Piri” para os mais íntimos, com ruas de pedra, muito frequentada nos fins de semana, e uma arquitetura charmosa com casarões coloniais em seu centro histórico.</div>
           </v-card-text>
 
           <v-card-actions>
-            <v-btn variant="outlined" color="orange">Visitar</v-btn>
+            <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="orange">enviar <br> para cliente</v-btn>
             <v-btn
+              size="small"
               prepend-icon="mdi-calendar-month"
               variant="tonal"
               color="orange"
@@ -129,30 +239,26 @@
           </v-card-actions>
         </v-card>
       </v-col>
-      <v-col cols="12" sm="6" md="4" lg="3">
-        <v-card class="mx-auto">
-          <v-card-title>A maior borboleta do mundo</v-card-title>
+      <v-col cols="12" sm="6" md="4" >
+        <v-card height="530" class="mx-auto" density="compact">
+          <v-card-title>Chapada Diamantina, Bahia</v-card-title>
 
           <v-img
             class="mx-auto align-center text-white"
             cover
             width="300"
             height="300"
-            src="https://images.pexels.com/photos/10917649/pexels-photo-10917649.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/06/lugares-viajar-brasil-lencois-chapada-diamantina--820x547.jpeg"
           ></v-img>
 
-          <v-card-subtitle class="pt-4">
-            Conheça a maior borboleta do mundo</v-card-subtitle
-          >
-
           <v-card-text>
-            <div>Conheça a maior borboleta do mundo</div>
-            <div>Whitsunday Island, Whitsunday Islands</div>
+            <div>Chapada Diamantina, com ruas de pedra e enorme quantidade de atividades, é o destino ideal para quem procura contato com muita natureza.</div>
           </v-card-text>
 
           <v-card-actions>
-            <v-btn variant="outlined" color="orange">Visitar</v-btn>
+            <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="orange">enviar <br> para cliente</v-btn>
             <v-btn
+              size="small"
               prepend-icon="mdi-calendar-month"
               variant="tonal"
               color="orange"
@@ -161,30 +267,26 @@
           </v-card-actions>
         </v-card>
       </v-col>
-      <v-col cols="12" sm="6" md="4" lg="3">
-        <v-card class="mx-auto">
-          <v-card-title>A maior borboleta do mundo</v-card-title>
+      <v-col cols="12" sm="6" md="4" >
+        <v-card height="530" class="mx-auto" density="compact">
+          <v-card-title>Fernando de Noronha,<br> Pernambuco</v-card-title>
 
           <v-img
             class="mx-auto align-center text-white"
             cover
             width="300"
             height="300"
-            src="https://images.pexels.com/photos/10917649/pexels-photo-10917649.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/06/lugares-conhecer-brasil-fernando-noronha-820x548.jpg"
           ></v-img>
 
-          <v-card-subtitle class="pt-4">
-            Conheça a maior borboleta do mundo</v-card-subtitle
-          >
-
           <v-card-text>
-            <div>Conheça a maior borboleta do mundo</div>
-            <div>Whitsunday Island, Whitsunday Islands</div>
+            <div>A ilha mais cobiçada do Brasil é, certamente, um dos destinos mais bonitos em nosso país, bastante procurado para férias e viagens em lua-de-mel.</div>
           </v-card-text>
 
           <v-card-actions>
-            <v-btn variant="outlined" color="orange">Visitar</v-btn>
+            <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="orange">enviar <br> para cliente</v-btn>
             <v-btn
+              size="small"
               prepend-icon="mdi-calendar-month"
               variant="tonal"
               color="orange"
@@ -193,30 +295,26 @@
           </v-card-actions>
         </v-card>
       </v-col>
-      <v-col cols="12" sm="6" md="4" lg="3">
-        <v-card class="mx-auto">
-          <v-card-title>A maior borboleta do mundo</v-card-title>
+      <v-col cols="12" sm="6" md="4" >
+        <v-card height="530" class="mx-auto" density="compact">
+          <v-card-title>São Miguel do Gostoso, <br> Rio Grande do Norte</v-card-title>
 
           <v-img
             class="mx-auto align-center text-white"
             cover
             width="300"
             height="300"
-            src="https://images.pexels.com/photos/10917649/pexels-photo-10917649.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="https://www.melhoresdestinos.com.br/wp-content/uploads/2018/11/natal-rio-grande-do-norte-routos-sao-miguel-do-gostoso7-820x615.jpg"
           ></v-img>
 
-          <v-card-subtitle class="pt-4">
-            Conheça a maior borboleta do mundo</v-card-subtitle
-          >
-
           <v-card-text>
-            <div>Conheça a maior borboleta do mundo</div>
-            <div>Whitsunday Island, Whitsunday Islands</div>
+            <div>Ainda desconhecida por muitas pessoas, São Miguel do Gostoso é uma cidade bem pequenininha do Rio Grande do Norte, na beira do mar, ideal para quem busca quietude.</div>
           </v-card-text>
 
           <v-card-actions>
-            <v-btn variant="outlined" color="orange">Visitar</v-btn>
+            <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="orange">enviar <br> para cliente</v-btn>
             <v-btn
+              size="small"
               prepend-icon="mdi-calendar-month"
               variant="tonal"
               color="orange"
@@ -229,4 +327,8 @@
   </v-container>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+
+const dialogOpen = ref(false);
+</script>
