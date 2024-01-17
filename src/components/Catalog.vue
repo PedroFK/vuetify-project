@@ -1,7 +1,15 @@
 <template>
   <v-container>
     <v-card flat class="border mb-4">
-      <v-card-title>Leads para Contato</v-card-title>
+      <div class="d-flex justify-space-between">
+        <v-card-title>Leads para Contato</v-card-title>
+
+        <v-card-title-card-title>
+          <v-btn @click="formOpen = true" variant="tonal" size="small" class="ma-2" color="primary">Leads para Contato</v-btn>
+          
+        </v-card-title-card-title>
+      </div>
+      
 
       <v-dialog
         transition="dialog-bottom-transition"
@@ -99,6 +107,7 @@
             <td>12/11/2023</td>
             <td>
               <v-btn
+                @click="dialogOpen = true"
                 color="primary"
                 style="border-radius: 5px"
                 density="compact"
