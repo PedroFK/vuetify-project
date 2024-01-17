@@ -1,6 +1,6 @@
 <template>
   <v-app theme="light">
-    <v-navigation-drawer v-model="isDrawerOpen">
+    <v-navigation-drawer color="secondary" v-model="isDrawerOpen">
       <v-list density="compact">
         <v-list-item title="Menu"></v-list-item>
           
@@ -29,7 +29,7 @@
       </v-list>
     </v-navigation-drawer>
 
-    <VAppBar flat color="blue-grey-lighten-2" class="border-b">
+    <VAppBar flat color="secondary" class="border-b">
 
       <v-app-bar-nav-icon
         @click="isDrawerOpen = !isDrawerOpen"
@@ -75,7 +75,7 @@
     </VAppBar>
 
     <v-main>
-      <Test />
+      <Catalog />
     </v-main>
 
   </v-app>
