@@ -126,6 +126,7 @@
             <th>Nome</th>
             <th>E-mail</th>
             <th>Primeiro contato</th>
+            <th>Tipo Cliente</th>
             <th>Ações</th>
           </tr>
         </thead>
@@ -134,6 +135,12 @@
             <td>Pedro</td>
             <td>pedro@gmail.com</td>
             <td>20/08/2023</td>
+            <td>
+              <v-chip 
+              color="primary"
+              variant="outlined" 
+              size="small">Quente</v-chip>
+            </td>
             <td>
               <v-btn
                 @click="dialogOpen = true"
@@ -163,6 +170,12 @@
             <td>Gabriela</td>
             <td>gabi222@gmail.com</td>
             <td>12/11/2023</td>
+            <td>
+              <v-chip 
+              color="primary"
+              variant="outlined" 
+              size="small">Frio</v-chip>
+            </td>
             <td>
               <v-btn
                 @click="dialogOpen = true"
