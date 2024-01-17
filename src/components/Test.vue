@@ -71,21 +71,21 @@
             <td>
               <v-btn
                 @click="dialogOpen = true"
-                color="blue"
+                color="primary"
                 style="border-radius: 5px"
                 density="compact"
                 icon="mdi-phone"
                 class="mr-2"
               />
               <v-btn
-                color="green"
+                color="primary"
                 style="border-radius: 5px"
                 density="compact"
                 icon="mdi-check-bold"
                 class="mr-2"
               />
               <v-btn
-                color="red"
+                color="primary"
                 style="border-radius: 5px"
                 density="compact"
                 icon="mdi-trash-can-outline"
@@ -99,21 +99,21 @@
             <td>12/11/2023</td>
             <td>
               <v-btn
-                color="blue"
+                color="primary"
                 style="border-radius: 5px"
                 density="compact"
                 icon="mdi-phone"
                 class="mr-2"
               />
               <v-btn
-                color="green"
+                color="primary"
                 style="border-radius: 5px"
                 density="compact"
                 icon="mdi-check-bold"
                 class="mr-2"
               />
               <v-btn
-                color="red"
+                color="primary"
                 style="border-radius: 5px"
                 density="compact"
                 icon="mdi-trash-can-outline"
@@ -143,12 +143,12 @@
             <div>Excelente para quem busca contato com a natureza, Bonito é o lugar perfeito para quem quer contato com a natureza e uma boa dose aventura!</div>
           </v-card-text>
 
-          <v-card-actions>
-            <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="orange">enviar <br> para cliente</v-btn>
+          <v-card-actions class="d-flex justify-space-evenly">
+            <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="primary">enviar <br> para cliente</v-btn>
             <v-btn
               prepend-icon="mdi-calendar-month"
               variant="tonal"
-              color="orange"
+              color="primary"
               >Agendar</v-btn
             >
           </v-card-actions>
@@ -170,12 +170,12 @@
             <div>Uma das cidades para se ter como base para visitar a Chapada dos Veadeiros, em Goiás, é a pequena Alto Paraíso.</div>
           </v-card-text>
 
-          <v-card-actions>
-            <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="orange">enviar <br> para cliente</v-btn>
+          <v-card-actions  class="d-flex justify-space-evenly">
+            <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="primary">enviar <br> para cliente</v-btn>
             <v-btn
               prepend-icon="mdi-calendar-month"
               variant="tonal"
-              color="orange"
+              color="primary"
               >Agendar</v-btn
             >
           </v-card-actions>
@@ -197,12 +197,12 @@
             <div>São poucas as opções de hotéis e pousadas com serviço completo e boa avaliação dos hóspedes para reservar pelo Booking. </div>
           </v-card-text>
 
-          <v-card-actions>
-            <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="orange">enviar <br> para cliente</v-btn>
+          <v-card-actions  class="d-flex justify-space-evenly">
+            <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="primary">enviar <br> para cliente</v-btn>
             <v-btn
               prepend-icon="mdi-calendar-month"
               variant="tonal"
-              color="orange"
+              color="primary"
               >Agendar</v-btn
             >
           </v-card-actions>
@@ -224,12 +224,12 @@
             <div>Apenas “Piri” para os mais íntimos, com ruas de pedra, muito frequentada nos fins de semana, e uma arquitetura charmosa com casarões coloniais em seu centro histórico.</div>
           </v-card-text>
 
-          <v-card-actions>
-            <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="orange">enviar <br> para cliente</v-btn>
+          <v-card-actions  class="d-flex justify-space-evenly">
+            <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="primary">enviar <br> para cliente</v-btn>
             <v-btn
               prepend-icon="mdi-calendar-month"
               variant="tonal"
-              color="orange"
+              color="primary"
               >Agendar</v-btn
             >
           </v-card-actions>
@@ -251,12 +251,12 @@
             <div>Chapada Diamantina, com ruas de pedra e enorme quantidade de atividades, é o destino ideal para quem procura contato com muita natureza.</div>
           </v-card-text>
 
-          <v-card-actions>
-            <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="orange">enviar <br> para cliente</v-btn>
+          <v-card-actions  class="d-flex justify-space-evenly">
+            <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="primary">enviar <br> para cliente</v-btn>
             <v-btn
               prepend-icon="mdi-calendar-month"
               variant="tonal"
-              color="orange"
+              color="primary"
               >Agendar</v-btn
             >
           </v-card-actions>
@@ -278,12 +278,12 @@
             <div>A ilha mais cobiçada do Brasil é, certamente, um dos destinos mais bonitos em nosso país.</div>
           </v-card-text>
 
-          <v-card-actions>
-            <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="orange">enviar <br> para cliente</v-btn>
+          <v-card-actions  class="d-flex justify-space-evenly">
+            <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="primary">enviar <br> para cliente</v-btn>
             <v-btn
               prepend-icon="mdi-calendar-month"
               variant="tonal"
-              color="orange"
+              color="primary"
               >Agendar</v-btn
             >
           </v-card-actions>
@@ -305,12 +305,12 @@
             <div>Ainda desconhecida por muitas pessoas, São Miguel do Gostoso é uma cidade bem pequenininha do Rio Grande do Norte.</div>
           </v-card-text>
 
-          <v-card-actions>
-            <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="orange">enviar <br> para cliente</v-btn>
+          <v-card-actions  class="d-flex justify-space-evenly">
+            <v-btn size="small" prepend-icon="mdi-share-all" variant="outlined" color="primary">enviar <br> para cliente</v-btn>
             <v-btn
               prepend-icon="mdi-calendar-month"
               variant="tonal"
-              color="orange"
+              color="primary"
               >Agendar</v-btn
             >
           </v-card-actions>
