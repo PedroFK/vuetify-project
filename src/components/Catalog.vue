@@ -44,7 +44,7 @@
             </v-row>
             <v-row class="mt-0">
               <v-col>
-                  <v-text-field label="E-mail" variant="outlined"></v-text-field>
+                  <v-text-field label="E-mail" variant="outlined" :rules="emailRules"></v-text-field>
               </v-col>
               <v-col>
                 <v-text-field label="Telefone" variant="outlined"></v-text-field>
@@ -62,7 +62,7 @@
           </v-card-text>
           <v-card-actions class="ma-3">
             <v-spacer></v-spacer>
-            <v-btn variant="text" color="primary">Cancelar</v-btn>
+            <v-btn variant="text" color="primary" @click="isActive.value = false">Cancelar</v-btn>
             <v-btn variant="tonal" color="primary">Salvar</v-btn>
           </v-card-actions>
           </v-card>
@@ -194,8 +194,7 @@
 
     <v-row>
       <v-col cols="12" sm="6" md="4" >
-        <v-title></v-title>
-        <v-card height="530" class="mx-auto" density="compact">
+        <v-card height="530" class="mx-auto" border density="compact">
           <v-card-title>Bonito, Mato Grosso do Sul</v-card-title>
 
           <v-img
@@ -222,7 +221,7 @@
         </v-card>
       </v-col>
       <v-col cols="12" sm="6" md="4" >
-        <v-card height="530" class="mx-auto" density="compact">
+        <v-card height="530" class="mx-auto" border density="compact">
           <v-card-title>Chapada dos Veadeiros, Goiás</v-card-title>
 
           <v-img
@@ -249,7 +248,7 @@
         </v-card>
       </v-col>
       <v-col cols="12" sm="6" md="4" >
-        <v-card height="530" class="mx-auto" density="compact">
+        <v-card height="530" class="mx-auto" border density="compact">
           <v-card-title>Pantanal</v-card-title>
 
           <v-img
@@ -276,7 +275,7 @@
         </v-card>
       </v-col>
       <v-col cols="12" sm="6" md="4" >
-        <v-card height="530" class="mx-auto" density="compact">
+        <v-card height="530" class="mx-auto" border density="compact">
           <v-card-title>Pirenópolis, Goiás</v-card-title>
 
           <v-img
@@ -303,7 +302,7 @@
         </v-card>
       </v-col>
       <v-col cols="12" sm="6" md="4" >
-        <v-card height="530" class="mx-auto" density="compact">
+        <v-card height="530" class="mx-auto" border density="compact">
           <v-card-title>Chapada Diamantina, Bahia</v-card-title>
 
           <v-img
@@ -330,7 +329,7 @@
         </v-card>
       </v-col>
       <v-col cols="12" sm="6" md="4" >
-        <v-card height="530" class="mx-auto" density="compact">
+        <v-card height="530" class="mx-auto" border density="compact">
           <v-card-title>Fernando de Noronha,<br> Pernambuco</v-card-title>
 
           <v-img
@@ -357,7 +356,7 @@
         </v-card>
       </v-col>
       <v-col cols="12" sm="6" md="4" >
-        <v-card height="530" class="mx-auto" density="compact">
+        <v-card height="530" class="mx-auto" border density="compact">
           <v-card-title>São Miguel do Gostoso, <br> Rio Grande do Norte</v-card-title>
 
           <v-img
@@ -392,4 +391,19 @@ import { ref } from "vue";
 
 const dialogOpen = ref(false);
 const formOpen = ref(false);
+const emailRules = [
+  value => {
+    if(value) {
+      return true
+    }
+    return 'O e-mail é obrigatório'
+  },
+
+  value => {
+    if(value.includes('@')) {
+      return true
+    }
+    return 'O e-mail é obrigatório'
+  }
+]
 </script>
