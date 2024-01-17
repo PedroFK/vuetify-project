@@ -5,11 +5,69 @@
         <v-card-title>Leads para Contato</v-card-title>
 
         <v-card-title-card-title>
-          <v-btn @click="formOpen = true" variant="tonal" size="small" class="ma-2" color="primary">Leads para Contato</v-btn>
-          
+          <v-btn @click="formOpen = true" variant="tonal" size="small" class="ma-2" color="primary">Cadastrar Lead</v-btn>
         </v-card-title-card-title>
       </div>
       
+      <v-dialog
+        transition="dialog-bottom-transition"
+        class="mx-auto"
+        max-width="500"
+        v-model="formOpen"
+      >
+        <template v-slot:default="{ isActive }">
+          <v-card>
+            <v-card-item class="bg-purple-darken-4">
+              <v-card-title>
+                <span class="text-h5">Cadastrar Lead</span>
+              </v-card-title>
+              
+              <template v-slot:append>
+                <v-defaults-provider
+                  :defaults="{
+                    VBtn: {
+                      variant: 'text',
+                      density: 'compact',
+                    },
+                  }"
+                >
+                <v-btn size="x-large" class="mb-1" icon @click="isActive.value = false">X</v-btn>
+              </v-defaults-provider>
+            </template>
+          </v-card-item>
+
+          <v-card-text>
+            <v-row>
+              <v-col>
+                <v-text-field label="Nome" variant="outlined"></v-text-field>
+              </v-col>
+            </v-row>
+            <v-row class="mt-0">
+              <v-col>
+                  <v-text-field label="E-mail" variant="outlined"></v-text-field>
+              </v-col>
+              <v-col>
+                <v-text-field label="Telefone" variant="outlined"></v-text-field>
+              </v-col>
+            </v-row>
+            <v-row class="mt-0">
+              <v-col>
+                <v-select
+                  variant="outlined"
+                  label="Tipo de Lead"
+                  :items="['Frio', 'Aquecido', 'Quente']"
+                ></v-select>
+              </v-col>
+            </v-row>
+          </v-card-text>
+          <v-card-actions class="ma-3">
+            <v-spacer></v-spacer>
+            <v-btn variant="text" color="primary">Cancelar</v-btn>
+            <v-btn variant="tonal" color="primary">Salvar</v-btn>
+          </v-card-actions>
+          </v-card>
+        </template>
+      </v-dialog>
 
       <v-dialog
         transition="dialog-bottom-transition"
@@ -333,4 +391,5 @@
 import { ref } from "vue";
 
 const dialogOpen = ref(false);
+const formOpen = ref(false);
 </script>
