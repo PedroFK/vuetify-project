@@ -207,13 +207,13 @@
 
     <v-row>
       <v-col cols="12" sm="6" md="4" >
-        <v-card height="530" class="mx-auto" border density="compact">
+        <v-card height="530" class="mx-auto" elevation="5" border density="compact">
           <v-card-title>Bonito, Mato Grosso do Sul</v-card-title>
 
           <v-img
             class="mx-auto align-center text-white"
             cover
-            width="300"
+            width="400"
             height="300"
             src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/06/lugares-para-viajar-brasil-820x430.jpg"
           ></v-img>
@@ -234,13 +234,13 @@
         </v-card>
       </v-col>
       <v-col cols="12" sm="6" md="4" >
-        <v-card height="530" class="mx-auto" border density="compact">
+        <v-card height="530" class="mx-auto" elevation="5" border density="compact">
           <v-card-title>Chapada dos Veadeiros, Goiás</v-card-title>
 
           <v-img
             class="mx-auto align-center text-white"
             cover
-            width="300"
+            width="400"
             height="300"
             src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/06/lugares-viajar-brasil--820x547.jpeg"
           ></v-img>
@@ -261,13 +261,13 @@
         </v-card>
       </v-col>
       <v-col cols="12" sm="6" md="4" >
-        <v-card height="530" class="mx-auto" border density="compact">
+        <v-card height="530" class="mx-auto" elevation="5" border density="compact">
           <v-card-title>Pantanal</v-card-title>
 
           <v-img
             class="mx-auto align-center text-white"
             cover
-            width="300"
+            width="400"
             height="300"
             src="https://www.melhoresdestinos.com.br/wp-content/uploads/2022/09/pantanal-gustavo-figueiroa3-820x430.jpg"
           ></v-img>
@@ -288,13 +288,13 @@
         </v-card>
       </v-col>
       <v-col cols="12" sm="6" md="4" >
-        <v-card height="530" class="mx-auto" border density="compact">
+        <v-card height="530" class="mx-auto" elevation="5" border density="compact">
           <v-card-title>Pirenópolis, Goiás</v-card-title>
 
           <v-img
             class="mx-auto align-center text-white"
             cover
-            width="300"
+            width="400"
             height="300"
             src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/05/viagem-pos-quarentena-pirenopolis-820x547.jpg"
           ></v-img>
@@ -315,13 +315,13 @@
         </v-card>
       </v-col>
       <v-col cols="12" sm="6" md="4" >
-        <v-card height="530" class="mx-auto" border density="compact">
+        <v-card height="530" class="mx-auto" elevation="5" border density="compact">
           <v-card-title>Chapada Diamantina, Bahia</v-card-title>
 
           <v-img
             class="mx-auto align-center text-white"
             cover
-            width="300"
+            width="400"
             height="300"
             src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/06/lugares-viajar-brasil-lencois-chapada-diamantina--820x547.jpeg"
           ></v-img>
@@ -342,13 +342,13 @@
         </v-card>
       </v-col>
       <v-col cols="12" sm="6" md="4" >
-        <v-card height="530" class="mx-auto" border density="compact">
+        <v-card height="530" class="mx-auto" elevation="5" border density="compact">
           <v-card-title>Fernando de Noronha,<br> Pernambuco</v-card-title>
 
           <v-img
             class="mx-auto align-center text-white"
             cover
-            width="300"
+            width="400"
             height="300"
             src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/06/lugares-conhecer-brasil-fernando-noronha-820x548.jpg"
           ></v-img>
@@ -369,13 +369,13 @@
         </v-card>
       </v-col>
       <v-col cols="12" sm="6" md="4" >
-        <v-card height="530" class="mx-auto" border density="compact">
+        <v-card height="530" class="mx-auto" elevation="5" border density="compact">
           <v-card-title>São Miguel do Gostoso, <br> Rio Grande do Norte</v-card-title>
 
           <v-img
             class="mx-auto align-center text-white"
             cover
-            width="300"
+            width="400"
             height="300"
             src="https://www.melhoresdestinos.com.br/wp-content/uploads/2018/11/natal-rio-grande-do-norte-routos-sao-miguel-do-gostoso7-820x615.jpg"
           ></v-img>
