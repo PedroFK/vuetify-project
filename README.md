@@ -1,9 +1,10 @@
 # Travel Page
 Welcome to my [Vuetify](https://vuetifyjs.com/en/) study project! This initiative was undertaken with the primary goal of exploring the functionalities offered by the Vuetify library. My project focuses on creating a dynamic and responsive webpage for a travel seller specializing in destinations across Brazil.
 
-Vuetify is a [Vue.js](https://vuejs.org/)-based frontend library that provides a comprehensive set of pre-designed components and styles, making it easy to develop modern and visually appealing user interfaces.
+## Preview
+![vuetify](https://github.com/PedroFK/vuetify-project/assets/137946119/7c48f376-0dd8-4b28-9b7b-84cff229f115)
 
-## Key Components:
+## Used Components:
 - Material Design Components
 - Responsive Design
 - Flexible Grid System
@@ -12,10 +13,7 @@ Vuetify is a [Vue.js](https://vuejs.org/)-based frontend library that provides a
 - Dialogs and Modals
 - Icons and Typography
 - Dark and Light Theme Support
-
-## Preview
-![vuetify](https://github.com/PedroFK/vuetify-project/assets/137946119/7c48f376-0dd8-4b28-9b7b-84cff229f115)
-
+  
 ## 💿 Install
 
 Set up your project using your preferred package manager. Use the corresponding command to install the dependencies:
